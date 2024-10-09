@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karaoke Video Queue</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Karaoke Video Queue</h1>
+        <div class="search-bar">
+            <input type="text" id="songInput" placeholder="Enter song name...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="videoPlayer" class="video-player">
+            <iframe id="player" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>Search Results</h2>
+        <div id="videoList" class="video-list"></div>
+
+        <h2>Queue</h2>
+        <button id="playQueueBtn" class="play-queue-btn" onclick="playQueue()">Play Queue</button>
+        <button id="nextSongBtn" class="next-song-btn" onclick="skipCurrentSong()">Next</button>
+        <div id="queueList" class="queue-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
